@@ -1,0 +1,27 @@
+
+html {
+  scroll-behavior: smooth;
+}
+
+body{
+  background-color: black;
+  height: 4700px;
+  
+  /* padding-left: 40px; */
+}
+
+/* to hide scrollbar without losing functionality */
+::-webkit-scrollbar  {
+  display: none;
+}
+
+main{
+  background-color: black;
+}
+
+section{
+  background-color: black;
+}
+
+
+  

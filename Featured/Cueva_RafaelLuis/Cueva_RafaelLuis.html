@@ -1,0 +1,949 @@
+<!DOCTYPE html>
+<html lang="en">
+    
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="contact-us.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Agbalumo&family=Montserrat:wght@400;500;700;900&family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
+    <link href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Agbalumo&family=Montserrat:wght@400;700&display=swap" rel="stylesheet">    
+    <style>
+*,::after,::before{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html{
+    scroll-behavior: smooth !important;
+}
+body{
+    margin: 0px;
+    background-color: beige;
+    scroll-behavior: smooth !important;
+
+}
+
+.nav{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-top: 30px;
+    padding-right: 20px;
+    padding-left: 20px;
+}
+
+.nav .logo h1{
+    vertical-align: middle;
+    display: inline-block;
+    font-weight: 600;
+    font-family: sans-serif;
+    color: black;
+}
+
+.nav .logo b{
+    color: black;
+}
+
+.nav ul{
+    display: flex;
+    list-style: none;
+}
+
+.nav ul li{
+    margin-right: 30px;
+}
+
+.nav ul li a{
+    text-decoration: none;
+    color: black;
+    font-weight: 500;
+    font-family: sans-serif;
+    font-size: 18px;
+    transition: .6s;
+}
+.nav ul li a:hover{
+    color: white;
+    background-color: #cc0000;
+    padding: 3px 12px 3px 12px;
+    border-radius: 10px;
+}
+
+/*active for Home*/
+
+/*input*/
+
+input{
+    padding: 10px 20px;
+    cursor: pointer;
+
+}
+
+.signin{
+    background: transparent;
+    border: none;
+    transition: .6s;
+}
+
+.signin:hover{
+    transform:scale(1.3);
+    z-index: 2;
+}
+
+.signup{
+    background-color: #cc0000;
+    color: white;
+    outline: none;
+    border-radius: 5px;
+    border: none;
+    transition: .6s;
+    
+}
+
+.signup:hover{
+    transform:scale(1.3);
+    z-index: 2;
+}
+
+
+/*content*/
+.content{
+    display: grid;
+    grid-template-columns: 50% auto;
+    gap: 30px;
+    margin-top: 120px;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+}
+
+/*content text*/
+/*LEFT SIDE*/
+
+.content .content-left{
+    display: block;
+    width: 100%;
+ 
+}
+
+.content .content-left .info{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.content .content-left .info h2{
+    padding-top: 0px;
+    font-size: 90px;
+    font-family: sans-serif;
+    padding-left: 70px;
+    padding-bottom: 0px;
+}
+
+.first-page-description{
+    margin: 0px;
+    padding-left: 70px;
+}
+.first-page-btn{
+    margin-left: 70px;
+    margin-top: 0px;
+    text-decoration: none;
+    color: white;
+    font-weight: 500;
+    font-family: sans-serif;
+    background-color: #cc0000;
+    padding: 7px 12px 7px 12px;
+    border-radius: 4px;
+    transition: .15s;
+}
+.first-page-btn:hover{
+    border: 2px solid rgba(204, 0, 0, 1);
+    background-color: rgba(255, 255, 255, 1);
+    color: rgba(204, 0, 0, 1);
+}
+.content .content-left .info p{
+    font-size: 23px;
+    line-height: 2pc;
+    margin-bottom: 30px;
+    font-family: sans-serif;
+
+}
+
+/*content*/
+/*content-button*/
+
+.content .content-left button{
+    padding: 10px 23px;
+    background-color: #cc0000;
+    color: aliceblue;
+    border-radius: 5px;
+    border: none;
+    cursor: pointer;
+    transition: .8s;
+}
+
+.content .content-left button:hover{
+    transform:scale(1.3);
+    z-index: 2;
+}
+
+/*content image*/
+/*image-right*/
+.content .content-right{
+    display: block;
+    width: 100%;
+}
+
+.content .content-right img{
+    width: 500px;
+    height: auto;
+    margin-right: 150px;
+    transition: .9s;
+}
+
+.content .content-right img:hover{
+    transform:scale(1.3);
+    z-index: 2;
+}
+
+/*cards*/
+.category{
+    width: 100%;
+    display: flex;
+    margin-bottom: 200px;
+    justify-content: center;
+
+}
+
+.category .list-items{
+    width: 90%;
+    position: relative;
+}
+
+.category .list-items h3{
+    font-size: 20px;
+    font-weight: 600;
+    font-family: sans-serif;
+    margin-bottom: 70px;
+
+}
+.card-list{
+    margin-left: 40px;
+}
+
+.category .list-items .card-list{
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+}
+
+.category .card-list .card{
+    width: 200px;
+    height: auto;
+    display: block;
+    padding: 10px;
+    border-radius: 10px;
+    position: relative;
+    background: white;
+    outline: 2px solid #cc0000;
+    transition: 0.80s;
+}
+.card:hover{
+    box-shadow: 0px 70px 100px rgba(204, 0, 0, .4);
+}
+
+.category .card-list .card img{
+    width: 80px;
+    height: 80px;
+    bottom: 140px;
+    left: 50px;
+    object-fit: cover;
+    object-position: center;
+    background-repeat: no-repeat;
+    position: absolute;
+    box-shadow: 0 5px 10px rgba(0, 0, 0, .4);
+    border-radius: 50%;
+}
+
+.category .card-list .card .food-title{
+    padding: 40px 0 10px;
+}
+
+.category .card-list .card .food-title h1{
+    text-align: center;
+    font-weight: bold;
+    font-size: 16px;
+    font-family: sans-serif;
+}
+
+.category .card .desc-food p{
+    text-align: center;
+    font-size: 14px;
+    font-family: sans-serif;
+    margin-bottom: 20px;
+}
+
+.category .card .price{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.category .card .price span{
+    font-weight: 600;
+    font-family: sans-serif;
+}
+
+.category .card .price span .plus-icon{
+    color: #cc0000;
+    cursor: pointer;
+    font-size: 20px;
+    transition: .7s;
+}
+
+.category .card .price span .plus-icon:hover{
+    transform:scale(1.3);
+    z-index: 2;
+}
+
+
+/*scroll-bar*/
+::-webkit-scrollbar{
+    width: 10px;
+
+}
+
+::-webkit-scrollbar-thumb{
+    border-radius: 20px;
+    background-color: #cc0000;
+}
+.imglogoye{
+    vertical-align: middle;
+    display: inline-block;
+    width: 100px;
+}
+/* menu-two-food */
+.second-page{
+    background-color: rgb(255, 255, 255);
+    margin: 30px 30px 0px 30px;
+    height: 1050px;
+    padding-top: 0px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+.second-page-menu{
+    font-size: 50px;
+    text-align: center;
+    padding-top: 30px;
+}
+.menu-items-two{
+    height: 440px;
+    width: 290px;
+    transition: .7s;
+    background-color: white;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, .5);
+    
+}
+.menu-items-two:hover{
+    scale: 1.2;
+}
+.img-food{
+    height: 250px;
+    width: 100%;
+}
+.menu-two-food{
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+    object-position: center;
+}
+/* Menu-two-Grid */
+.menu-grid-two{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    padding: 50px;
+}
+.menu-grid-three-middle{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    padding-top: 20px;
+    padding-left: 50px;
+    padding-bottom: 50px;
+    padding-right: 50px;
+}
+/* Menu-two-Grid */
+/* food-description-two */
+.food-two-title, .food-desc-two{
+    text-align: center;
+}
+.food-desc-two{
+    font-style: italic;
+    font-size: 15px;
+    margin: 5px 15px 10px 15px;
+    padding: 5px 15px 10px 15px;
+    height: auto;
+    text-align: center;
+}
+/* food-description-2-menu */
+.food-desc-two-div{
+    height: 67.8px;
+    margin: 0px;
+}
+/* price-buy-button */
+.price-grid-two{
+    display: flex;
+    justify-content: space-between;
+}
+.buy-class-menu{
+    cursor: pointer;
+    background-color: #cc0000;
+    color: white;
+    font-weight: bold;
+    border: none;
+    padding: 15px 25px 15px 25px;
+    border-radius: 6px;
+    transition: .20s;
+    margin: 0px;
+}
+/* price-buy-button */
+.price-menu-two{
+    margin: 0px;
+}
+.price-p-class{
+    font-size: 20px;
+    font-weight: bold;
+    font-family: Montserrat;
+    padding-top: 37px;
+    padding-left: 10px;
+
+}
+.buy-now-menu{
+    padding-top: 30px;
+    padding-right: 10px;
+
+}
+
+.buy-class-menu:hover{
+    border: 1px solid #cc0000;
+    background-color: white;
+    color: #cc0000;
+}
+.buy-class-menu:active{
+    scale: 0.88;
+}
+
+/* menu-two-food */
+/* about-us */
+.center-aboutus{
+    display: block;
+    margin: auto;
+}
+.about-us-page{
+    background-color: rgb(249, 249, 255);
+    margin: 0px 30px 0px 30px;
+    height: 700px;
+    padding-top: 120px;
+    padding-bottom: 120px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+.about-us-box{
+    margin-left: 50px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0px 0px 0px 250px;
+    height: 460px;
+    width: 1200.8px;
+}
+.logo-aboutus{
+    box-shadow: 0px 10px 20px rgba(0, 0, 0, .4);
+    border-radius: 200px;
+    padding: 0px;
+    margin-left: 200px;
+}
+.about-us-descript, .about-us-descript-two{
+    width: 688px;
+}
+.about-us-descript{
+    padding-top: 20px;
+    font-size: 14px;
+    margin-bottom: 0px;
+    text-align: justify;
+}
+.about-us-descript-two{
+    padding-top: 10px;
+    font-size: 14px;
+    margin-bottom: 0px;
+    text-align: justify;
+
+}
+/* button-view-full-menu */
+.view-full-menu{
+    margin-top: 20px;
+    background-color: #cc0000;
+    border: none;
+    color: rgb(249, 249, 255);
+    padding: 8px 16px 8px 16px;
+    transition: .15s;
+}
+.view-full-menu:hover{
+    box-shadow: 0px 12px 20px rgba(204, 0, 0, .3);
+}
+.view-full-menu:active{
+    color: #cc0000;
+    background-color: rgb(249, 249, 255);
+    border: 2px solid #cc0000;
+}
+/* contact-us */
+.contact-us{
+    font-size: 10px;
+    height: 700px;
+    background-color: aliceblue;
+    margin: 0px 30px 0px 30px;
+    background: linear-gradient(rgba(0, 0, 0, 0.65),rgba(0, 0, 0, 0.45),rgba(0, 0, 0, 0.35),rgba(0, 0, 0, 0.0)),url(imges/contact-us-one.jpg) no-repeat;
+    background-size: 100%;
+    font-family: Montserrat;
+}
+.contact-img{
+    height: 100%;
+    width: 100%;
+    object-fit: contain;
+    object-position: middle;
+}
+.h-one-contact{
+  padding-top: 70px; text-align: center;
+  font-size: 30px;
+  margin-bottom: 10px;
+  color: white;
+}
+.small-box{
+  background-color: rgba(204, 0, 0, 1);
+  height: 525px;
+  width: 450px;
+  padding-left: 15px;
+  margin-top: 90px;
+  margin-left: 725px;
+  border-radius: 20px;
+  border: 2px solid rgba(255, 255, 255, 1);
+}
+.flex-name{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+}
+.input-name-field{
+    border: none;
+    border-radius: 8px;
+    width: 129px;
+}
+.name-text-contact{
+    font-size: 12px;
+    color: white;
+    margin-bottom: 7px;
+}
+.container-small{
+    width: 70%;
+}
+/* flex-name-two */
+.flex-name-two{
+    padding-top: 10px;
+}
+.name-text-contact-two{
+    font-size: 12px;
+    margin-bottom: 5px;
+    color: white;
+}
+.input-name-field-two{
+    border-radius: 10px;
+    border: none;
+    width: 97%;
+    height: 97%;
+    padding-bottom: 48%;
+}
+/* button-submit */
+.btn-submit-now{
+    margin-top: 20px;
+    background-color:rgb(102, 0, 0);
+    border: none;
+    color: white;
+    padding: 8px 15px 8px 15px;
+    font-weight: bold;
+    cursor: pointer;
+    border-radius: 10px;
+    transition: .15s;
+}
+.btn-submit-now:hover{
+    background-color: white;
+    border: 2px solid rgb(102, 0, 0);
+    color: rgb(102, 0, 0);
+}
+.btn-submit-now:active{
+    box-shadow: 0px 0px 20px rgba(0, 0, 0, .4);
+    scale: 0.95;
+}
+/* footer */
+.footer-last{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    height: 110px;
+    background-color: #961616;
+    margin: 0px 30px 0px 30px;
+    align-items: center;
+}
+.footer-last h1{
+    padding-left: 80px;
+    text-align: center;
+    color: white;
+    font-family: Montserrat;
+    padding-top: 70px;
+    font-size: 15px;
+    font-weight: 400;
+}
+.footer-last img{
+    object-fit: contain;
+    object-position: left;
+    height: 90px;
+    margin-top: 10px;
+    margin-left: 20px;
+    vertical-align: middle;
+}
+.footer-last p{
+    font-family: Arial, Helvetica, sans-serif;
+    color: white;
+    text-align: center;
+}
+.box-container-socials{
+    margin: 0px;
+    height: 100%;
+    border: none;
+    vertical-align: middle;
+}
+.socials-small{
+    display: flex;
+    flex-direction: row;
+    justify-content: left;
+    align-items: center;
+}
+.socials-small img{
+    margin-left: 0px;
+    height: 25px;
+    object-fit: contain;
+}
+.socials-small p{
+    font-size: 10px;
+    font-family: Montserrat;
+    margin-top: 10px;
+    margin-right: 20px;
+    margin-left: 5px;
+}
+    </style>
+    <title>Rafi_restau</title>
+</head>
+<body>
+    <section class="menu">
+        <div class="nav">
+            <div class="logo">
+                <img class="imglogoye" src="logo/RRstew-nav.png" alt="">
+                <h1><b>RRstew</b></h1>
+            </div>
+            <ul>
+                <li><a href="#home" class="home">Home</a></li>
+                <li><a href="#best-choices" class="Best-Choices">Best Choices</a></li>
+                <li><a href="#menu-2" class="Menu">Menu</a></li>
+                <li><a href="#about-us" class="About-us">About us</a></li>
+                <li><a href="#contact-us-one" class="Contact-us">Contact us</a></li>
+            </ul>
+            <div>
+                <input class="signin" type="submit" value="Sign in" name="signin">
+                <input class="signup" type="submit" value="Sign Up" name="signup">
+            </div>
+        </div>  
+    </section>
+    <section id="home" class="grid"> 
+        <div class="content">
+            <div class="content-left">
+                <div class="info">
+                    <h2>The best food <br> For you!</h2>
+                    <p class="first-page-description">We serve the best for you  <br> 
+                        and for your pockets</p>
+                </div>
+                <a class="first-page-btn" href="#menu-2">Explore Menu</a>
+            </div>
+            <div class="content-right">
+                <img src="imges/saladbowl1.png" alt="">
+            </div>
+        </div>
+    </section>
+    <section id="best-choices" class="category">
+        <div class="list-items">
+            <h3>Best Choices</h3>
+            <div class="card-list">
+                <div class="card">
+                    <img src="imges/chicken1.png" alt="">
+                    <div class="food-title">
+                        <h1>Chicken</h1>
+                    </div>
+                    <div class="desc-food">
+                        <p>crunchy, golden-hued chicken that's soft inside</p>
+                    </div>
+                    <div class="price">
+                        <span>₱90.00</span><span><i class='bx bx-plus-medical plus-icon'></i></span>
+                    </div>
+                </div>
+                <div class="card">
+                    <img src="imges/rv-donut.jpg" alt="">
+                    <div class="food-title">
+                        <h1>Mini Donuts</h1>
+                    </div>
+                    <div class="desc-food">
+                        <p>Best if you just want a quick treat</p>
+                    </div>
+                    <div class="price">
+                        <span>₱380.00</span><span><i class='bx bx-plus-medical plus-icon'></i></span>
+                    </div>
+                </div>
+                <div class="card">
+                    <img src="imges/siomai-0.jpg" alt="">
+                    <div class="food-title">
+                        <h1>Siomai</h1>
+                    </div>
+                    <div class="desc-food">
+                        <p>Best enjoyed with a splash of our special dipping sauce!</p>
+                    </div>
+                    <div class="price">
+                        <span>₱20.00</span><span><i class='bx bx-plus-medical plus-icon'></i></span>
+                    </div>
+                </div>
+                <div class="card">
+                    <img src="imges/chicken-curry.jpg" alt="">
+                    <div class="food-title">
+                        <h1>Curry</h1>
+                    </div>
+                    <div class="desc-food">
+                        <p>A heartwarming dish that speaks of culinary passion and tradition.</p>
+                    </div>
+                    <div class="price">
+                        <span>₱101.00</span><span><i class='bx bx-plus-medical plus-icon'></i></span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- menu-2 -->
+    <section id="menu-2" style="margin: 0px;">
+        <div style=" height: 1200px;" class="second-page">
+            <h1 class="second-page-menu">--&nbsp;Menu&nbsp;--</h1>
+            <div class="menu-grid-two">
+                <div class="menu-items-two">
+                <!-- tomato-salad -->
+                    <div class="img-food">
+                        <img class="menu-two-food" src="menu-2/tomato-salad.jpg" alt="">
+                        <h1 class="food-two-title">Tomato Salad</h1>
+                            <div style="padding-top: 15px;"  class="food-desc-two-div">
+                                <p  class="food-desc-two">
+                                    Celebrate the essence of summer in every bite!
+                                </p>
+                            </div>
+                        <div class="price-grid-two">
+                            <div class="price-menu-two">
+                                <p class="price-p-class">&#x20B1; 180.00</p>
+                            </div>
+                            <div class="buy-now-menu">
+                                <button class="buy-class-menu">Buy</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- bound-salad -->
+                <div class="menu-items-two">
+                    <div class="img-food">
+                        <img class="menu-two-food" src="menu-2/Olivier Salad - Russian Potato Salad.jpg" alt="">
+                        <h1 class="food-two-title">Bound Salad</h1>
+                            <div class="food-desc-two-div">
+                                <p style="padding-top: 15px;" class="food-desc-two">
+                                    Perfect for those seeking a light yet satisfying meal.
+                                </p>
+                            </div>
+                        <div class="price-grid-two">
+                            <div class="price-menu-two">
+                                <p class="price-p-class">&#x20B1; 120.00</p>
+                            </div>
+                            <div class="buy-now-menu">
+                                <button class="buy-class-menu">Buy</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- chicken -->
+                <div class="menu-items-two">
+                    <div class="img-food">
+                        <img class="menu-two-food" src="menu-2/Crispy Fried Chicken Wings Recipe - Coop Can Cook.jpg" alt="">
+                        <h1 class="food-two-title">Crispy Fried Chicken</h1>
+                            <div class="food-desc-two-div">
+                                <p style="padding-top: 15px;" class="food-desc-two">
+                                    A comforting classic that'll make you savor every bite!
+                                </p>
+                            </div>
+                        <div class="price-grid-two">
+                            <div class="price-menu-two">
+                                <p class="price-p-class">&#x20B1; 90.00</p>
+                            </div>
+                            <div class="buy-now-menu">
+                                <button class="buy-class-menu">Buy</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="menu-grid-three-middle">
+                <!-- mini-donuts -->
+                <div class="menu-items-two">
+                    <div class="img-food">
+                        <img class="menu-two-food" src="menu-2/mini-donuts.jpeg" alt="">
+                        <h1 class="food-two-title">Mini-Donuts</h1>
+                            <div class="food-desc-two-div">
+                                <p class="food-desc-two">
+                                    26 mini-donuts, each perfectly golden and dusted with a tantalizing mix of sugars and spices.
+                                </p>
+                            </div>
+                        <div class="price-grid-two">
+                            <div class="price-menu-two">
+                                <p class="price-p-class">&#x20B1; 380.00</p>
+                            </div>
+                            <div class="buy-now-menu">
+                                <button class="buy-class-menu">Buy</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- Siomai -->
+                <div class="menu-items-two">
+                    <div class="img-food">
+                        <img class="menu-two-food" src="menu-2/siomai-1.jpg" alt="">
+                        <h1 class="food-two-title">Siomai</h1>
+                            <div class="food-desc-two-div">
+                                <p class="food-desc-two">
+                                    Steamed to perfection, these traditional dumplings are a delightful fusion of flavors and textures
+                                </p>
+                            </div>
+                        <div class="price-grid-two">
+                            <div class="price-menu-two">
+                                <p class="price-p-class">&#x20B1; 20.00</p>
+                            </div>
+                            <div class="buy-now-menu">
+                                <button class="buy-class-menu">Buy</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>    
+                <!-- Curry -->
+                <div class="menu-items-two">
+                    <div class="img-food">
+                        <img class="menu-two-food" src="menu-2/chicken-curry-2.jpg" alt="">
+                        <h1 class="food-two-title">Chicken Curry</h1>
+                            <div class="food-desc-two-div">
+                                <p class="food-desc-two">
+                                    Tender chicken pieces are simmered to perfection, creating a creamy, luscious gravy that pairs beautifully with rice or flatbread. 
+                                </p>
+                            </div>
+                        <div class="price-grid-two">
+                            <div class="price-menu-two">
+                                <p class="price-p-class">&#x20B1; 101.00</p>
+                            </div>
+                            <div class="buy-now-menu">
+                                <button class="buy-class-menu">Buy</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>     
+            </div>
+    </section>
+    <!-- about-us -->
+    <section id="about-us">
+        <div class="about-us-page">
+            <div class="center-aboutus"></div>
+                <div class="about-us-box">
+                    <div style>
+                        <h1 style="font-size: 50px;">About us</h1>
+                        <p class="about-us-descript"> <strong>Welcome to RRstew &ndash;</strong> where passion meets the plate, and where culinary excellence is paired with affordability. At RRstew, we believe in the simple principle that great food should not come at an exorbitant price. 
+                        </p>
+                        <p class="about-us-descript-two">
+                        <strong>Our mission </strong>is to provide dishes that not only tantalize your taste buds but also offer value for every penny spent. We aim to serve every meal at just the right price, ensuring utmost satisfaction to all our patrons. Founded by a culinary enthusiast with a profound commitment to wellbeing, RRstew is more than just a restaurant. Our owner is driven by an unwavering dedication to nourishing the community. By prioritizing both taste and health, we ensure that our guests leave with full stomachs and happy hearts. Join us on this journey of deliciousness and wellbeing. At RRstew, we don't just serve meals &ndash; we serve experiences.
+                        </p>
+
+                        <button class="view-full-menu">View Full Menu</button>
+                    </div>
+                    <div>
+                        <img class="logo-aboutus" src="imges/rr-stew-about-us.png" alt="">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section id="contact-us-one">
+        <div style="position: relative;" class="contact-us">
+            <div class="small-box-container">
+                <div class="small-box" style="position:absolute;">
+                    <h1 class="h-one-contact">Send us a message</h1>
+                    <div class="flex-name">
+                        <!-- asdasd -->
+                        <div class="container-small">
+                            <p class="name-text-contact">Name</p>
+                            <input class="input-name-field" type="Name" placeholder="Name">
+                        </div>
+                        <div class="container-small">
+                            <p class="name-text-contact">Email</p>
+                            <input class="input-name-field" type="Name" placeholder="Email">
+                        </div>
+                        <div class="container-small">
+                            <p class="name-text-contact">Phone</p>
+                            <input class="input-name-field" type="Name" placeholder="Phone">
+                        </div>
+                        <!-- asdasd -->
+                    </div>
+                    <div class="flex-name-two">
+                        <!-- asdasd -->
+                        <div class="container-small-two">
+                            <p class="name-text-contact-two">What do we need to improve on?</p>
+                            <input class="input-name-field-two" type="Name" placeholder="Message">
+                        </div>
+                    </div>
+                    <div class="container-button">
+                    <button class="btn-submit-now">
+                        Send now
+                    </button>
+                    </div>
+                    
+                </div>
+            </div>
+        </div>
+        <div class="footer-last">
+            <img src="logo/rrstew-footer.png" alt="">
+            <h1>Made by Rafael Luis Cueva</h1>
+            <div class="box-container-socials">
+                <div class="socials-small">
+                  <img src="imges/fb-footer.png" alt="">
+                  <p>facebook.com/RRstew</p>
+                </div>
+                <div class="socials-small">
+                  <img src="imges/ig-footer.png" alt="">
+                  <p>instagram.com/RRstew</p>
+                </div>
+                <div class="socials-small">
+                  <img src="imges/tiktok-footer.png" alt="">
+                  <p>Tiktok.com/RRstew</p>
+                </div>
+              </div>
+            
+        </div>
+    </section>
+</body>
+</html>
