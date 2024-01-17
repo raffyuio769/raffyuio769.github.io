@@ -3,6 +3,8 @@
   align-items: center;
   background-color: black;
   height: 50px;
+  max-width: 40%;
+  min-width: 20%;
   color: white;
   position: relative;
   top: 5px;
@@ -15,8 +17,9 @@
   color: white;
   font-family: Roboto, Arial;
   font-weight: 500;
-  font-size: 20px;
+  font-size: 3vh;
   transition: .15s;
+  margin: 0px 20px;
 }
 /* nav animation */
 .Home:hover, .Featured:hover, .Bio:hover, .Contact:hover{
@@ -301,7 +304,8 @@
   scale: 1.05;
 }
 .yt-thumb{
-  height: 300px;
+  max-height: 300px;
+  min-height: 200px;
   border-radius: 30px;
   box-shadow: 0px 0px 15px rgba(255, 0, 0, .4);
   transition: .8s;
@@ -618,3 +622,7 @@
   opacity: 100%;
 }
 
+@media only screen and (max-width:414px) {
+  
+  
+}
