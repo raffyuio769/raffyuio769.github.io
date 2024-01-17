@@ -618,3 +618,35 @@
   opacity: 100%;
 }
 
+@media only screen and (max-width: 1024px) {
+  .update-text{
+    visibility: visible;
+    
+  }
+  body{
+    visibility: hidden;
+  }
+}
+
+@media only screen and (min-width: 1025px) {
+  .update-text{
+    visibility: hidden;
+    
+  }
+  body{
+    visibility: visible;
+  }
+}
+.update-text{
+  width: 100%;
+  font-family: Arial, Helvetica, sans-serif;
+  font-weight: 700;
+  font-size: 6vw;
+  position: absolute;
+  color: white;
+  display: block;
+  top: 30px;
+  margin: 0 auto;
+  text-align: center;
+  
+}
