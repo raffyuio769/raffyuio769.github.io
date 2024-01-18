@@ -15,7 +15,7 @@
   color: white;
   font-family: Roboto, Arial;
   font-weight: 500;
-  font-size: 20px;
+  font-size: 1.3vw;
   transition: .15s;
 }
 /* nav animation */
@@ -141,9 +141,10 @@
   margin-top: 20px;
   background-color: #b4c468;
   color: #1e2124;
-  height: 30px;
+  height: 3vh;
   padding-left: 10px;
   padding-right: 15px;
+  font-size: 1vw;
   width: auto;
   display: flex;
   align-items: center;
@@ -156,6 +157,7 @@
 .tag-two{
   font-family: Roboto, Arial, Helvetica, sans-serif;
   padding-left: 10px;
+  font-size: 1vw;
   padding-right: 15px;
   font-weight: 500;
   margin-left: 10px;
@@ -163,7 +165,7 @@
   /* background-color: #ed5555; */
   background-color: #ffca4f;
   color: #1e2124;
-  height: 30px;
+  height: 3vh;
   width: auto;
   display: flex;
   align-items: center;
@@ -174,13 +176,14 @@
 .tag-three{
   font-family: Roboto, Arial, Helvetica, sans-serif;
   padding-left: 10px;
+  font-size: 1vw;
   padding-right: 15px;
   font-weight: 500;
   margin-left: 10px;
   margin-top: 20px;
   background-color: #7289da;
   color: #1e2124;
-  height: 30px;
+  height: 3vh;
   width: auto;
   display: flex;
   align-items: center;
@@ -519,8 +522,8 @@
   position: relative;
   top: -30px;
   font-size: 25px;
-  width: 70%;
-  max-width: 70%;
+  width: 80%;
+  max-width: 80%;
   margin: 0px;
   color: white;
   font-family: Roboto, Arial, Helvetica, sans-serif;
@@ -606,11 +609,16 @@
   font-size: 18px;
   cursor: pointer;
 }
+.social-btns{
+  display: block;
+  width: 60%;
+  padding: 0 20px;
+}
 .social-btns img{
   cursor: pointer;
   object-fit: contain;
-  height: 60px;
-  margin-right: 10px;
+  height: 15vh;
+  margin-right: 40px;
   opacity: 30%;
   transition: .15s;
 }
