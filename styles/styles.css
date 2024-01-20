@@ -616,7 +616,6 @@
   overflow: hidden;
   align-items: center;
   justify-content: space-between;
-  padding-right: 68px;
 }
 .submit{
   margin-left: 10px;
@@ -633,13 +632,13 @@
 }
 .social-btns{
   display: block;
-  width: 60%;
-  padding: 0 20px;
+  width: 80%;
+  padding: 50px;
 }
 .social-btns img{
   cursor: pointer;
   object-fit: contain;
-  height: 10vh;
+  height: 80px;
   margin-right: 40px;
   opacity: 30%;
   transition: .15s;
@@ -648,26 +647,8 @@
   opacity: 100%;
 }
 
-@media only screen and (max-width: 768px) {
-  .update-text{
-    visibility: visible;
-    
-  }
-  body{
-    visibility: hidden;
-  }
-}
 
-@media only screen and (min-width: 769px) {
-  .update-text{
-    visibility: hidden;
-      
-  }
-  body{
-    visibility: visible;
-  }
-}
-.update-text{
+/* .update-text{
   width: 100%;
   font-family: Arial, Helvetica, sans-serif;
   font-weight: 700;
@@ -679,4 +660,4 @@
   margin: 0 auto;
   text-align: center;
   
-}
+} */
