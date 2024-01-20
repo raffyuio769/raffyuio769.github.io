@@ -37,6 +37,7 @@
 }
 .first-page{
  color: white;
+ margin-top: 150px;
 }
 .text{
   color: white;
@@ -79,7 +80,6 @@
   display: flex;
   align-items: center;
   justify-content: space-around;
-  margin-top: 130px;
   overflow: hidden;
 }
 .img-side{
