@@ -462,7 +462,7 @@
 
   /* contact section  start*/
   .contact-me{
-    background-color: rgba(144, 238, 144, 0.395);
+    /* background-color: rgba(144, 238, 144, 0.395); */
     display: flex;
     justify-content: column;
     text-align: center;
@@ -472,10 +472,10 @@
   }
   .contact-inner-container{
     font-size: 22px;
-    background-color: lightgray;
+    /* background-color: lightgray; */
   }
   .contact-inner-container p{
-    background-color: rgba(255, 182, 193, 0.527);
+    /* background-color: rgba(255, 182, 193, 0.527); */
     font-size: calc(12px + 8 * ((100vw - 320px) / 379));
   }
   .inner-h1{
