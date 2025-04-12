@@ -1,13 +1,18 @@
 
 html {
   scroll-behavior: smooth;
+  overflow-x: hidden;
 }
 
 body{
   background-color: black;
-  height: 100vh;
-  
+  height: 100%;
+  margin: 0;
   /* padding-left: 40px; */
+  padding-bottom: 300px;
+  font-family: Montserrat, Arial;
+  color: white;
+  overflow-x: hidden;
 }
 
 /* to hide scrollbar without losing functionality */
