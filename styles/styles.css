@@ -120,8 +120,9 @@
 }
 .content-tags{
   display: flex;
+  max-width: 600px;
 }
-.tag-one, .tag-two, .tag-three{
+ .tag-two, .tag-three{
   margin-left: 10px;
   padding: 10px 15px;
   font-family: Montserrat, arial;
@@ -253,6 +254,9 @@
 .featured-right .text-upper{
   font-size: 36px
 }
+.text-lower-first-sec{
+  font-size: 16px;
+}
 .featured-right .text-lower{
   font-size: 32px;
 }
@@ -267,7 +271,7 @@
   border: 1px solid rgba(255, 255, 255, 0.314);
 }
 .featured-img-right:hover{
-  box-shadow: 0px 0px 30px rgba(254,254,254, 0.25);
+  box-shadow: 0px 0px 50px rgba(254,254,254, 0.55);
 }
 hr{
   width: 80%;
