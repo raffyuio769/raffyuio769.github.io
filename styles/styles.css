@@ -135,6 +135,7 @@
 }
 .tag-two{
   background-color: rgb(255, 202, 79);
+  min-width: 90px;
 }
 .tag-three{
   background-color: rgb(114, 137, 218);
