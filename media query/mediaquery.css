@@ -163,6 +163,24 @@
         padding: 7px 9px;
         color:black;
       }
+      .resume-two{
+  border: 1px solid white;
+  padding: 6px 8px;
+  font-size: 16px;
+  margin-top: 15px;
+        margin-left: 10px;
+        border-radius: 10px;
+  text-decoration: none;
+  color: white;
+  cursor: pointer;
+  transition: background-color 0.15s, color 0.15s;
+}
+.resume-two:hover{
+  background-color: white;
+  border: none;
+  padding: 7px 9px;
+  color:black;
+}
       .rafipic{
 
         height: 150px;
@@ -700,6 +718,24 @@
         padding: 7px 9px;
         color:black;
       }
+.resume-two{
+  border: 1px solid white;
+  padding: 6px 8px;
+  font-size: calc(16px + 10 * ((100vw - 700px) / 399));
+        margin-top: 15px;
+        margin-left: 10px;
+        border-radius: 10px;
+  text-decoration: none;
+  color: white;
+  cursor: pointer;
+  transition: background-color 0.15s, color 0.15s;
+}
+.resume-two:hover{
+  background-color: white;
+  border: none;
+  padding: 7px 9px;
+  color:black;
+}
       .rafipic{
 
         min-height: 150px;

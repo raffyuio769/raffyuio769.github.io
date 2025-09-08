@@ -146,6 +146,7 @@
 .resume-section{
   font-family: Montserrat, arial;
   display: flex;
+  text-align: center;
 }
 .resume{
   border: 1px solid white;
@@ -157,9 +158,28 @@
   text-decoration: none;
   color: white;
   cursor: pointer;
+  max-height: fit-content;
   transition: background-color 0.15s, color 0.15s;
 }
 .resume:hover{
+  background-color: white;
+  border: none;
+  padding: 7px 9px;
+  color:black;
+}
+.resume-two{
+  border: 1px solid white;
+  padding: 6px 8px;
+  font-size: 22px;
+  margin-top: 30px;
+  margin-left: 20px;
+  border-radius: 10px;
+  text-decoration: none;
+  color: white;
+  cursor: pointer;
+  transition: background-color 0.15s, color 0.15s;
+}
+.resume-two:hover{
   background-color: white;
   border: none;
   padding: 7px 9px;
